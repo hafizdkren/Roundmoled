@@ -29,6 +29,22 @@ themevarsp
 @import "https://tiredmala.github.io/animcord/animcordmain.css";
 @import "https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/SettingsIcons.css";
 
+/* Personal Font Preferences */
+@import url(https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap);
+
+:root {
+    --Chat-Font-Used: 'Jetbrains Mono', monospace;
+    --Chat-Font-Size: 12px;
+}
+
+:not([class="hljs"]):not(code) {
+    font-family: var(--Chat-Font-Used) !important;
+}
+
+.markup:not(code) {
+    font-size: var(--Chat-Font-Size) !important;
+}
+
 :root{
     --dark-primary: #000000;
     --dark-secondary: #050505;
